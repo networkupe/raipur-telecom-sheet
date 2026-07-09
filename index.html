@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raipur Station Development Project - Telecommunication Work | Indian Railways</title>
+    <meta name="description" content="Comprehensive telecommunication work data sheet for Raipur Railway Station redevelopment project under Indian Railways.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Header Bar -->
+    <header class="top-header" id="topHeader">
+        <div class="header-left">
+            <div class="logo-icon">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <rect width="28" height="28" rx="6" fill="url(#logoGrad)"/>
+                    <path d="M7 8h4v12H7zM13 8h4v12h-4zM19 8h4v12h-4z" fill="white" opacity="0.9"/>
+                    <defs><linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#1a73e8"/><stop offset="1" stop-color="#0d47a1"/></linearGradient></defs>
+                </svg>
+            </div>
+            <div class="header-title-group">
+                <h1 class="doc-title">Raipur Station Development Project</h1>
+                <span class="doc-subtitle">Telecommunication Work — Indian Railways</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="railway-badge">
+                <span class="badge-icon">🚂</span>
+                <span>SECR Zone</span>
+            </div>
+            <button class="btn-export" id="btnExportCSV" title="Export as CSV">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 12l-4-4h2.5V2h3v6H12L8 12zM2 14h12v-2H2v2z"/></svg>
+                Export CSV
+            </button>
+            <button class="btn-print" id="btnPrint" title="Print">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1h8v3H4V1zm-2 4h12a2 2 0 012 2v4h-3v3H3v-3H0V7a2 2 0 012-2zm2 6h8v-2H4v2z"/></svg>
+                Print
+            </button>
+        </div>
+    </header>
+
+    <!-- Project Info Bar -->
+    <div class="project-info-bar" id="projectInfoBar">
+        <div class="info-item">
+            <span class="info-label">Project</span>
+            <span class="info-value">Raipur Railway Station Redevelopment</span>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+            <span class="info-label">Zone</span>
+            <span class="info-value">South East Central Railway (SECR)</span>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+            <span class="info-label">Division</span>
+            <span class="info-value">Raipur Division</span>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+            <span class="info-label">Station Code</span>
+            <span class="info-value">R</span>
+        </div>
+        <div class="info-divider"></div>
+        <div class="info-item">
+            <span class="info-label">Category</span>
+            <span class="info-value">A1 Category Station</span>
+        </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <nav class="sheet-tabs" id="sheetTabs">
+        <button class="tab active" data-tab="summary">📊 Summary</button>
+        <button class="tab" data-tab="ofc">🔌 OFC & Cabling</button>
+        <button class="tab" data-tab="network">🌐 Network & IP</button>
+        <button class="tab" data-tab="pa-display">📢 PA & Display</button>
+        <button class="tab" data-tab="cctv">📹 CCTV & Surveillance</button>
+        <button class="tab" data-tab="telephone">📞 Telephone Systems</button>
+        <button class="tab" data-tab="wifi">📶 Wi-Fi & Connectivity</button>
+        <button class="tab" data-tab="power">⚡ Power & Earthing</button>
+        <button class="tab" data-tab="bom">📦 Bill of Materials</button>
+        <button class="tab" data-tab="timeline">📅 Timeline & Milestones</button>
+    </nav>
+
+    <!-- Sheet Container -->
+    <main class="sheet-container" id="sheetContainer">
+        <!-- Each tab's content is rendered dynamically -->
+    </main>
+
+    <!-- Status Bar -->
+    <footer class="status-bar" id="statusBar">
+        <div class="status-left">
+            <span class="status-item" id="statusSheetName">Sheet: Summary</span>
+            <span class="status-divider">|</span>
+            <span class="status-item" id="statusRowCount">Rows: --</span>
+        </div>
+        <div class="status-right">
+            <span class="status-item">Raipur Station Dev. — Telecom Work</span>
+            <span class="status-divider">|</span>
+            <span class="status-item" id="statusLastUpdate">Last Updated: July 2026</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
